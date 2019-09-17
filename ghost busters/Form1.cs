@@ -19,6 +19,16 @@ namespace ghost_busters
             richTextBox1.AppendText(pi.ToString("N3") + "\n");
             richTextBox1.AppendText(pi.ToString("N5") + "\n");
             richTextBox1.AppendText(pi.ToString("N15") + "\n");
+
+            string st = "three";
+            try
+            {
+                int it = int.Parse(st);
+            }
+            catch
+            {
+                MessageBox.Show(st + " is not an integer");
+            }
         }
 
         private void RichTextBox1_TextChanged(object sender, EventArgs e)
